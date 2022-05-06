@@ -1,25 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from  './components/Header'
+import Screen from './components/Screen'
+import Interface from './components/Interface';
+import useFetchEntries from './hooks/useFetchEntries'
 
 function App() {
+  const {entries, loading, error} = useFetchEntries()
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="pokedex">
+      <Header />
+      <Screen entries={entries} />
+      <Interface />
     </div>
-  );
+  )
 }
 
 export default App;

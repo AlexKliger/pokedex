@@ -1,38 +1,193 @@
-.App {
-  text-align: center;
+.flex {
+    display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flex--column {
+    flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+    display: flex;
+    gap: 10px;
+    padding: 15px 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    .header__light {
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+    }
+
+        .header__light--blue {
+            width: 75px;
+            height: 75px;
+            background-color: #28aafd;
+        }
+
+        .header__light--red {
+            background-color: #ff0029;
+        }
+
+        .header__light--yellow {
+            background-color: #ffe624;
+        }
+
+        .header__light--green {
+            background-color: #52b161;
+        }
+
+button {
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.button--flat {
+    width: 40px;
+    height: 7px;
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pokedex {
+    margin: 0 auto;
+    width: 400px;
+    height: 600px;
+    background-color: #dc0a2d;
 }
+
+.screen {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    background-color: #f8e8f8;
+}
+
+    .screen__main-view {
+        display: flex;
+        height: 100%;
+    }
+
+.interface {
+    display: flex;
+    justify-content: space-between  ;
+    padding: 0 25px;
+    margin-top: 50px;
+}
+
+    .interface__button {
+        width: 50px;
+        height: 50px;
+        background-color: #00312b;
+        border-radius: 50%;
+    }
+
+    .interface__start {
+        background-color: #ff002c;
+        margin-right: 25px;
+        margin-left: 10px;
+    }
+
+    .interface__select {
+        background-color: #036796;
+    }
+
+    .interface__pad {
+        margin-top: 20px;
+        width: 125px;
+        height: 75px;
+        background-color: #51ae5f;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+
+.d-pad {
+    display: grid;
+    width: 125px;
+    height: 125px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+    .d-pad__button {
+        background-color: #00312b;
+        border-radius: 5px;
+    }
+
+    .d-pad__button--up {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .d-pad__button--right {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .d-pad__button--down {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .d-pad__button--left {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .d-pad__button--center {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        border-radius: 0;
+    }
+
+.entries {
+    height: 100%;
+    display: flex;
+}
+
+    .entries__list {
+        overflow: auto;
+        height: 100%;
+        flex: 2;
+    }
+
+    .entries__side {
+        flex: 1;
+    }
+
+.entry_button {
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.pokemon {
+    height: 100%;
+}
+
+    .pokemon__info {
+        display: flex;
+        height: 50%;
+    }
+
+    .pokemon__text {
+        height: 50%;
+        overflow: auto;
+    }
