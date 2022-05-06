@@ -29,7 +29,7 @@ export default function useFetchPokemon(entry) {
             await fetch(BASE_URL + entry
                 ).then(response => response.json()
                 ).then(pokemon => {
-                    // Make a separate API
+                    // Make a separate API call.
                     fetch(pokemon.species.url
                         ).then(response => response.json()
                         ).then(pokemonSpecies => {
@@ -44,5 +44,6 @@ export default function useFetchPokemon(entry) {
             fetchPokemon()
         }
     }, [entry])
+
     return state
 }

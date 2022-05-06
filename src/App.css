@@ -6,6 +6,10 @@
     flex-direction: column;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .header {
     display: flex;
     gap: 10px;
@@ -59,7 +63,8 @@ button {
 .screen {
     margin: 0 auto;
     width: 300px;
-    height: 300px;
+    height: 250px;
+    margin-top: 40px;
     background-color: #f8e8f8;
 }
 
@@ -185,9 +190,27 @@ button {
     .pokemon__info {
         display: flex;
         height: 50%;
+        font-size: 18px;
     }
+
+    .pokemon__image {
+        align-items: center;
+        flex: 1;
+    }
+
+    .pokemon__stats {
+        padding-top: 10px;
+        gap: 10px;
+        flex: 1;
+    }
+
 
     .pokemon__text {
         height: 50%;
         overflow: auto;
+        border-top: 1px black solid;
+        text-align: justify;
+        padding: 10px;
+        line-height: 1.5em;
+        font-size: 18px;
     }

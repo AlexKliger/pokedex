@@ -7,14 +7,14 @@ const Pokemon = ({ pokemon, loading }) => {
     ) : (
         <div className="pokemon">
             <div className="pokemon__info">
-                <div>
-                    <img src={pokemon.sprites.front_default} alt={pokemon.name} />
-                    <p>{ pokemon.id }</p>
+                <div className="pokemon__image flex flex--column">
+                    <img src={pokemon.sprites.versions["generation-i"].yellow.front_transparent} alt={pokemon.name} />
+                    <p className="bold">No. { pokemon.id }</p>
                 </div>
-                <div>
+                <div className="pokemon__stats flex flex--column">
                     <p>{ pokemon.name.toUpperCase() }</p>
-                    <p>WT { pokemon.weight }</p>
-                    <p>HT { pokemon.height }</p>
+                    <p>WT &nbsp;&nbsp;&nbsp; <b className="bold">{ pokemon.weight }</b></p>
+                    <p>HT &nbsp;&nbsp;&nbsp; <b className="bold">{ pokemon.height }</b></p>
                 </div>
             </div>
             <div className="pokemon__text">
