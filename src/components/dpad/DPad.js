@@ -1,3 +1,4 @@
+import './dpad.css'
 import React from 'react'
 
 const DPad = () => {

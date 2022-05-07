@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Entries from "./Entries";
-import Pokemon from "./Pokemon"
+import Pokemon from "./pokemon/Pokemon"
 import useFetchPokemon from "../hooks/useFetchPokemon";
 
 const Screen = ({ entries }) => {

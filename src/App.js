@@ -1,7 +1,7 @@
 import './App.css';
 import Header from  './components/Header'
 import Screen from './components/Screen'
-import Interface from './components/Interface';
+import Interface from './components/interface/Interface';
 import useFetchEntries from './hooks/useFetchEntries'
 
 function App() {

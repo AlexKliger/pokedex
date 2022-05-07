@@ -1,9 +1,10 @@
+import './interface.css'
 import React from 'react'
-import DPad from './DPad'
+import DPad from '../dpad/DPad'
 
 const Interface = () => {
     return (
-        <div className="interface">
+        <div className="interface flex">
             <button className="interface__button"></button>
             <div>
                 <button className="interface__start button--flat"></button>

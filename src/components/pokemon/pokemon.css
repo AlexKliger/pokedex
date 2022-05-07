@@ -1,0 +1,28 @@
+.pokemon {
+    height: 100%;
+}
+
+    .pokemon__info {
+        height: 50%;
+    }
+
+    .pokemon__image {
+        align-items: center;
+        flex: 1;
+    }
+
+    .pokemon__stats {
+        padding-top: 10px;
+        gap: 10px;
+        flex: 1;
+    }
+
+
+    .pokemon__text {
+        height: 50%;
+        overflow: auto;
+        border-top: 1px black solid;
+        text-align: justify;
+        padding: 10px;
+        line-height: 1.5em;
+    }
