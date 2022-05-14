@@ -1,7 +1,7 @@
 import './pokemon.css'
 import React from 'react'
 
-const Pokemon = ({ pokemon, loading }) => {
+const Pokemon = ({ pokemon, loading, setSelectedEntry }) => {
 
     return loading ? (
         <span>Loading...</span>
@@ -21,6 +21,7 @@ const Pokemon = ({ pokemon, loading }) => {
             </div>
             <div className="pokemon__text">
                 <p>{pokemon.flavor_text_entries[0].flavor_text}</p>
+                <button onClick={() => setSelectedEntry('')}>X</button>
             </div>
         </div>
     )
