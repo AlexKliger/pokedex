@@ -16,7 +16,7 @@ const Screen = ({ entries }) => {
 
     return (
         <div className="screen">
-            {url
+            {data
             ?
             <Pokemon pokemon={data} entrySelected={entrySelected} />
             :

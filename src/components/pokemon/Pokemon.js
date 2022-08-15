@@ -27,11 +27,11 @@ const Pokemon = ({ pokemon, entrySelected }) => {
         </div>
         <div className="pokemon__text">
           {/* <p>{pokemon.flavor_text_entries[0].flavor_text}</p> */}
-          <button onClick={() => entrySelected('')}>X</button>
+          <button onClick={() => entrySelected('X')}>X</button>
         </div>
       </div>)
       :
-      <span>Loading...</span>
+      <span>Loading Pokemon...</span>
       }
     </div>
   )
