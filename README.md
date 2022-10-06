@@ -1,13 +1,13 @@
-# Lift Log
-A nostalgia driven project. A classic Pokedex with all of the original 151 Pokemon.
+# Pokedex
+A personal project with nostalgia as a powerful motivator. A recreation of the Generation I Pokedex from the original game. It contains entries for the original 151 Pokemon.
 
 ## How It's Made:
 React, HTML/CSS/JS
 
-The front end is built with React. It makes requests to a RESTful API for data on Pokemon.
+The frontend is built using React.js. Requests are made to a third-party RESTful API for data on Pokemon. Credit: https://pokeapi.co/
 
 ## Optimizations
-An optimization that can be made would be to implement pagination or loading entries only when scrolled to. Worth considering if I expand the Pokedex to include more generations.
+If I plan to expand the Pokedex to include later generations, loading entries only when being scrolled to would help when requested data gets too large.
 
 ## Lessons Learned:
-One of my earlier attempts at a larger React project. It helped me become more comfortable building front end projects that make frequent requests to an API.
+One of my earlier attempts at a larger React project. It helped me become more comfortable building frontend projects that consume third-party RESTful APIs.
