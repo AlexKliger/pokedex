@@ -4,6 +4,7 @@
 
     .pokemon__info {
         height: 50%;
+        padding: 1rem 0 0.25rem 0;
     }
 
     .pokemon__sprite {
@@ -12,11 +13,10 @@
         align-items: center;
         justify-content: flex-end;
         flex: 1;
-        overflow: hidden;
     }
 
         .pokemon__sprite img {
-            margin: -45px;
+            margin: -30px; /* Image cropping */
             width: 150px;
             height: 150px;
         }
@@ -29,7 +29,7 @@
     .pokemon__text {
         height: 50%;
         overflow: auto;
-        border-top: 1px black solid;
+        border-top: 3px black solid;
         text-align: justify;
         padding: 10px;
         line-height: 1.5em;
