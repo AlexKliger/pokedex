@@ -6,17 +6,25 @@
         height: 50%;
     }
 
-    .pokemon__image {
+    .pokemon__sprite {
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        justify-content: flex-end;
         flex: 1;
+        overflow: hidden;
     }
 
+        .pokemon__sprite img {
+            margin: -45px;
+            width: 150px;
+            height: 150px;
+        }
+
     .pokemon__stats {
-        padding-top: 10px;
         gap: 10px;
         flex: 1;
     }
-
 
     .pokemon__text {
         height: 50%;
