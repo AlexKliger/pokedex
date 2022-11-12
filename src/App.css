@@ -1,9 +1,23 @@
 :root {
     --font-size-medium: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body, #root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 body {
     background-color: #d1e5d9;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .flex {
