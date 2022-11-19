@@ -103,11 +103,16 @@ button {
         flex: 1;
     }
 
-.entry__button {
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
+.entry {
+    display: flex;
 }
+
+    .entry__button {
+        padding-top: 1rem;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+    }
 
 /* Themes */
 
