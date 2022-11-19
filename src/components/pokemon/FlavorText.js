@@ -15,7 +15,7 @@ const FlavorText = ({ text, entrySelected }) => {
             {textSlides[0]}
             </p>
             <i
-                className="fa fa-caret-down"
+                className="blink fa fa-caret-down"
             ></i>
         </div>
     )
