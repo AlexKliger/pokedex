@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import FlavorText from '../FlavorText'
 import useFetch from '../../hooks/useFetch'
 import './pokemon.css'
 
@@ -22,18 +23,16 @@ const Pokemon = ({ entrySelected, pokemonId }) => {
           </div>
           <div className="pokemon__stats flex flex--column">
             <p>{ pokemon.name.toUpperCase() }</p>
-            <p>{ pokemonSpecies.genera[7].genus.split(' ').slice(0, -1).join(' ').toUpperCase() }</p>
+            <p>{ pokemonSpecies.genera[7].genus.toUpperCase() }</p>
             <p>HT &nbsp;&nbsp;&nbsp; <b className="bold">{ pokemon.height } m</b></p>
             <p>WT &nbsp;&nbsp;&nbsp; <b className="bold">{ pokemon.weight } kg</b></p>
           </div>
         </div>
         <div className="pokemon__text">
-          <p>
-            {pokemonSpecies.flavor_text_entries.find(entry => 
-              entry.language.name === "en" && entry.version.name === "yellow"
-            ).flavor_text}
-          </p>
-          <button onClick={() => entrySelected('X')}>X</button>
+          <FlavorText
+            text={pokemonSpecies.flavor_text_entries.find(entry => entry.language.name === "en" && entry.version.name === "yellow").flavor_text}
+            entrySelected={entrySelected}
+          />
         </div>
       </div>)
       :
