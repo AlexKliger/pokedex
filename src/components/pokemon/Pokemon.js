@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import FlavorText from '../FlavorText'
+import FlavorText from './FlavorText'
 import useFetch from '../../hooks/useFetch'
 import './pokemon.css'
 

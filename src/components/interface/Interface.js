@@ -1,6 +1,6 @@
 import './interface.css'
 import React from 'react'
-import DPad from '../dpad/DPad'
+import DPad from './dpad/DPad'
 
 const Interface = () => {
     return (

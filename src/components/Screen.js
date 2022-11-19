@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from "react";
-import Entries from "./Entries";
+import Entries from "./entries/Entries";
 import Pokemon from "./pokemon/Pokemon"
 import useFetch from "../hooks/useFetch"
 
