@@ -13,7 +13,7 @@ const Entries = ({ entries, entrySelected }) => {
     }, [])
 
     return (
-        <div className="entries flex">
+        <div className="entries">
             <ul className="entries__list">
                 {
                     !entries
@@ -26,14 +26,17 @@ const Entries = ({ entries, entrySelected }) => {
                 }
 
             </ul>
-            <div className="entries__side font-size--medium">
-                <p>SEEN<br /> &nbsp;&nbsp; 151</p>
-                <p>OWN<br /> &nbsp;&nbsp; 151</p>
-                <div className="flex flex--column">
-                    <a>DATA</a>
-                    <a>CRY</a>
-                    <a>AREA</a>
+            <div className="entries__side">
+                <div className="entries__caught">
+                    <p style={{"paddingBottom": "0.5rem"}}>SEEN<br /> &nbsp;&nbsp; 151</p>
+                    <p>OWN<br /> &nbsp;&nbsp; 151</p>
                 </div>
+                <ul className="entries__info">
+                    <li>DATA</li>
+                    <li>CRY</li>
+                    <li>AREA</li>
+                    <li>QUIT</li>
+                </ul>
             </div>
         </div>
     )
